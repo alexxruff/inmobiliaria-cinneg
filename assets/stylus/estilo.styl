@@ -1,0 +1,501 @@
+@import '../css/font-awesome.css'
+@import '../css/full-slider.css'
+@import '../css/animate.css'
+
+
+*
+	padding 0
+	margin	0
+	box-sizing border-box
+	font-size 16px
+	font-family: 'Lato', sans-serif;
+	
+a, li
+	text-decoration	none
+	list-style none
+.video-fondo
+	position fixed
+	min-width 100%
+	min-height 100%
+	top 50%
+	left 50%
+	transform translateX(-50%) translateY(-50%)
+	z-index -1
+.menu-arriba
+	// position fixed
+		
+// .flex-menu
+// 	display flex
+// 	justify-content space-around
+// 	align-items center
+
+nav .container .navbar-header
+	height 50px
+	
+nav .container .navbar-header .navbar-brand
+	padding 5px 0
+	
+nav .navbar-header .logo-blanco
+	display none
+	
+nav .navbar-header a .logo-cinneg
+	width 200px
+	height 50px
+.menu-fixed
+	position fixed
+	z-index 1001
+	width 100%	
+.a-menu
+	color #ffffff
+	
+.menu-derecha
+	float right
+
+.info
+	background url('../images/casa-f.jpg')
+	background-size cover
+	background-attachment fixed
+	height 85%
+	div
+		padding 2rem 0
+	.filtro-color
+		// background #048998
+		background: linear-gradient(rgba(20,42,47,.8),rgba(0,0,0,0.6));
+		// background rgba(4, 137, 152, .85)
+		height 100%
+		div
+			text-align center
+			p
+				color #ffffff
+				font-size 42px
+			.avalan
+				display flex
+				justify-content space-around
+				align-items flex-end
+				img
+					width 200px
+					height 110px
+				.cinn
+					width 200px
+					height 60px
+				
+.container-buscador
+	display flex
+	justify-content center		
+.buscador-filtro
+	width 580px
+	background rgba(255, 255, 255, .8)
+	display flex
+	justify-content space-around
+	padding 5px 0
+	border 1px solid #f1f1f1
+	border-radius 5px	
+			
+#propiedades
+	width 190px
+	height 42px
+	font-size 13px
+	color gray
+	outline none
+	
+
+.buscar-boton
+	height 42px
+
+.btn-primary	
+	background #1B8057
+	border 1px solid #1B8057
+
+.contenido .row-buscador
+	margin 15px 0 
+.contenido .row .buscador-filtro
+	width 60%
+	background #f3f3f3
+	display flex
+	justify-content space-around
+	padding 2rem 0
+	border 1px solid #f1f1f1
+	border-radius 5px
+
+.carousel-desktop
+	color #484848
+	position relative
+	top -120px
+	h1
+		color #ffffff
+.caracteristicas
+	width 100%
+	font-size 11px
+	// background #f3f3f3
+	font-weight 500
+	padding 5px 5px
+	span
+		font-size 14px
+		// width 33.333%
+		// border 1px solid #222
+		color #484848
+		font-weight 400
+		text-align center
+		margin 0px 0px 0px 8px
+	i
+		margin-right 5px
+		color #F95959
+	
+.description-casas
+	height 90px
+	overflow-y scroll
+	margin-top 5px
+	
+.container .row div .thumbnail .caption h3
+	margin-top 0
+
+.h1-casas-venta
+	// background: linear-gradient(rgba(20,42,47,95),rgba(0,0,0,0.85));
+	border-bottom 1px solid gray
+	// padding 2px 1rem
+	color #484646
+	font-family: 'Lato', sans-serif;
+	font-weight 400
+	margin-top 0
+.caption
+	h3
+		color #484848
+		font-weight 300
+		font-size 20px
+	.p-t
+		display flex
+		align-items center
+		span
+			margin-left 10px
+.precio
+	font-size 21px
+	font-family 'Lato'
+	font-weight 500
+	display block
+	color #F95959
+.tipo-voc
+	padding 0px 7px
+	background #8BC34A
+	border-radius 3px
+	color #ffffff
+.carousel-control.right
+	right 15px
+.carousel-control
+	left 15px
+.contenido
+	padding-top 1rem
+.portada
+	width 100%
+	height 100%
+	display flex
+	flex-direction column
+	justify-content space-around
+	align-items center
+	h1
+		width 65%
+		font-family "Lato"
+		font-weight 700
+		text-align center
+		font-size 7rem
+		padding-top 30px
+	img
+		width 200px
+		height 70px
+		
+.casas-venta
+	width 100%
+	background #f6f6f6
+	z-index 0
+
+	.cubos
+		width 100%
+		height 70px
+		position relative
+		top -30px
+
+.imagen-carrusel-1
+	height 250px
+	
+.a-carrusel-oferta
+	text-decoration none
+	color #484646
+	text-align center
+	i
+		color #8BC34A
+	span
+		font-family 'Lato'
+	
+.a-carrusel-oferta:hover, .a-carrusel-oferta:focus
+	text-decoration none
+	color #484646
+
+.paginacion
+	background #ffffff
+
+footer
+	width 100%
+	background #ffffff
+	padding 5rem 0 4rem 0
+	.container
+		border-top 1px solid gray
+		padding-top 4rem
+
+.creditos
+	margin-top 4rem
+
+.logo-cinneg-pie
+	width 230px
+	height 70px
+	margin-bottom 1.5rem
+
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+
+.galeria-div
+	width 100%
+	background #24262e
+
+/////////////////////////////////
+// Información sobre el inmueble
+
+.descripcion-container
+	background #f5f5f5
+	padding 40px 0
+	.container
+		.descripcion-subcontainer
+			// padding-top 15px
+			.descripcion-info
+				background none
+				color #484848
+				h4
+					font-weight 600
+					color #F95959
+				.descripcion-general
+					white-space pre-line
+					font-weight 300
+				.mas-inf
+					margin-top 20px
+					.title-strong
+						font-weight 700
+					p
+						font-weight 400
+						margin 10px 0 0 0
+					span
+						font-weight 300
+			.descripcion-caracteristicas
+				display flex
+				flex-direction column
+				justify-content center
+				
+				h4
+					font-weight 600
+					color #F95959
+				ul		
+					li
+						font-weight 300
+						width 100%
+						span
+							margin 7px 0
+							border-bottom 1px solid #d2d1d1
+							overflow-x hidden
+						.font-fuerte
+							font-weight 400
+						
+			.descripcion-contacto
+				background #ffffff
+				border 1px solid #d2d1d1
+				border-radius 3px
+				height 430px
+				h4
+					text-align center
+					color #F95959
+					margin-bottom 5px
+				p
+					text-align center
+					margin 0
+					font-weight 400
+					color #8BC34A
+				.tel-p
+					margin-bottom 15px
+				.form-contacto
+					width 100%
+					height 100%
+					display flex
+					flex-direction column
+					.input-contacto
+						width 100%
+						height 42px
+						margin-bottom 10px
+						border-radius 5px
+						border 1px solid #d2d1d1
+						outline none
+						font-weight 300
+					.contactar
+						width 100%
+						height 42px
+						margin-bottom 10px
+						border-radius 5px
+						border none
+					textarea
+						width 100%
+						height 70px
+						margin-bottom 20px
+						border-radius 5px
+						border 1px solid #d2d1d1
+						font-weight 300
+
+				
+
+
+
+
+
+
+@media (max-width: 1200px)
+	.caracteristicas span
+		font-size 12px
+		margin 0px 0px 0px 4px
+
+@media (max-width: 768px)
+	.thumbnail
+		height 100%
+	
+	.navbar-header
+		width 100%
+		
+	.menu-arriba
+		background #222
+	.menu-derecha
+		float none	
+	nav .navbar-header .logo-negro
+		display none
+	nav .navbar-header .logo-blanco
+		display block
+		
+	nav .navbar-header a .logo-cinneg
+		width 140px
+		height 30px
+		// position relative
+	.portada h1
+		width 90%	
+	.imagen-carrusel-1
+		height 150px
+		
+	.contenido .row .buscador-filtro
+		width 100%
+		
+@media (max-width: 700px)
+	.info
+		height 100%
+		div
+		.filtro-color
+			div
+				p
+				.avalan
+					justify-content center
+					align-items flex-end
+					img
+						width 150px
+						height 60px
+					.cinn
+						width 150px
+						height 40px
+
+@media (max-width: 630px)
+	.portada
+		height 100%
+	.container-buscador
+		width 100%
+		.buscador-filtro
+			width 100%
+			flex-direction column
+			padding 5px
+			li
+				#propiedades
+					width 100%
+					margin-bottom 7px
+				.buscar-boton
+					width 100%
+			
+
+
+@media (max-width: 580px)
+	.portada 
+		h1
+			width 90%
+			font-size 5rem
+			color #484848
+		img
+			width 150px
+			height 50px
+	.info
+		height 100%
+		div
+		.filtro-color
+			div
+				height 100%
+				display flex
+				flex-direction column
+				justify-content space-between
+				p
+				.avalan
+					flex-direction row
+					justify-content space-around
+					img
+						width 100px
+						height 50px
+					.cinn
+						width 100px
+						height 30px	
+	.carousel-desktop
+		display none
+
+	.contenido .row .buscador-filtro
+		flex-direction column
+		justify-content space-around
+		height 300px
+
+	.contenido .row .buscador-filtro li div
+		width 100%
+	.contenido .row .buscador-filtro li div .boton-busqueda
+		width 60%
+
+
+
+
+

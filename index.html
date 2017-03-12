@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cinneg Inmobiliaria</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/css/estilo.css" rel="stylesheet">
+
+    <!-- icon -->
+	<link rel="shortcut icon" href="assets/images/icono.png">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="menu-fixed" id="menu-fixed">    
+        <nav class="navbar navbar-inverse menu-arriba container" role="navigation">
+            <div class="flex-menu">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="logo-negro" href="#"><img class="logo-cinneg" src="assets/images/logo/logo-negro.png"></a>
+                    <a class="logo-blanco navbar-brand" href="#"><img class="logo-cinneg" src="assets/images/logo/logo.png"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse menu-derecha" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="informacion-inmueble.html">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>
+
+    <section class="portada">
+        <h1 class="animated fadeInDown">¡Encuentra el inmueble que buscas!</h1>
+
+        <div class="col-md-12 container-buscador">
+        	<div class="buscador-filtro">    		
+			  	<li>
+					<select name="propiedades" id="propiedades">
+						<option value="venta">Propiedades en Venta</option>
+						<option value="renta">Propiedades en Renta</option>
+					</select>
+			  	</li>			  	
+			  	<li>
+					<select name="tipo-propiedad" id="propiedades">
+						<option value="tipo">Tipo de Propiedad</option>
+						<option value="casa">Casa</option>
+						<option value="departamento">Departamento</option>
+						<option value="edificio">Edificio</option>
+						<option value="quinta">Quinta</option>
+						<option value="renta">Bodega</option>
+					</select>
+			  	</li>
+
+			  	<li>
+				  	<!-- Indicates a successful or positive action -->
+				  	<input type="submit" value="Buscar Propiedad" id="id-buscar" class="buscar-boton btn btn-danger">
+				</li>
+        	</div>
+
+        </div>  
+
+        <img src="assets/images/flecha.png" class="animated bounce">
+        <video src="assets/video/fondo-3.mp4" autoplay loop poster="assets/images/casa.png" class="video-fondo"></video>
+    </section>
+
+    <section class="info">
+    	<div class="filtro-color">		
+	    	<div class="container">
+	    		<p>Información de la inmobiliaria</p>
+	    		<p>Información de la inmobiliaria</p>
+	    		<p>Información de la inmobiliaria</p>
+	    		<div class="avalan">
+		    		<img src="assets/images/logo/logo_gori.png">			
+		    		<img class ="cinn" src="assets/images/logo/logo.png">			
+		    		<img src="assets/images/logo/infonavit.png">			
+	    		</div>
+	    	</div>
+    	</div>
+    </section>
+
+
+    <section class="casas-venta">
+<!-- 	    <img class="cubos" src="assets/images/cubos.png"> -->
+
+		<div class="container carousel-desktop">
+		  <h1 class="text-center">¡En Oferta!</h1>
+		  <div class="row">
+		    <div class="col-sm-12">
+		      <div class="carousel slide multi-item-carousel" id="theCarousel">
+		        <div class="carousel-inner">
+		          <div class="item active">
+		            <div class="col-xs-4"><a href="#1" class="a-carrusel-oferta"><img src="assets/images/casa.png" class="img-responsive imagen-carrusel-1"><p>$ <span id="precio">1,300,000</span> | <i class="fa fa-bed" aria-hidden="true"></i> <span id="recamara">4</span> Recámaras | <i class="fa fa-bath" aria-hidden="true"></i> <span id="banos">2</span> Baños</p></a></div>
+		          </div>
+		          <div class="item">
+		            <div class="col-xs-4"><a href="#1" class="a-carrusel-oferta"><img src="assets/images/alberca.png" class="img-responsive imagen-carrusel-1"><p>$ <span id="precio">1,300,000</span> | <span id="recamara">4</span> Recamaras | <span id="banos">2</span> Baños</p></a></div>
+		          </div>
+		          <div class="item">
+		            <div class="col-xs-4"><a href="#1" class="a-carrusel-oferta"><img src="assets/images/casa.png" class="img-responsive imagen-carrusel-1"><p>$ <span id="precio">1,300,000</span> | <span id="recamara">4</span> Recamaras | <span id="banos">2</span> Baños</p></a></div>
+		          </div>
+		          <div class="item">
+		            <div class="col-xs-4"><a href="#1" class="a-carrusel-oferta"><img src="assets/images/alberca.png" class="img-responsive imagen-carrusel-1"><p>$ <span id="precio">1,300,000</span> | <span id="recamara">4</span> Recamaras | <span id="banos">2</span> Baños</p></a></div>
+		          </div>
+		          <div class="item">
+		            <div class="col-xs-4"><a href="#1" class="a-carrusel-oferta"><img src="assets/images/casa.png" class="img-responsive imagen-carrusel-1"><p>$ <span id="precio">1,300,000</span> | <span id="recamara">4</span> Recamaras | <span id="banos">2</span> Baños</p></a></div>
+		          </div>
+		          <div class="item">
+		            <div class="col-xs-4"><a href="#1" class="a-carrusel-oferta"><img src="assets/images/casa.png" class="img-responsive imagen-carrusel-1"><p>$ <span id="precio">1,300,000</span> | <span id="recamara">4</span> Recamaras | <span id="banos">2</span> Baños</p></a></div>
+		          </div>
+		          <!-- add  more items here -->
+		          <!-- Example item start:  -->
+		          
+		          <div class="item">
+		            <div class="col-xs-4"><a href="#1" class="a-carrusel-oferta"><img src="assets/images/renta.png" class="img-responsive imagen-carrusel-1"><p>$ <span id="precio">1,300,000</span> | <span id="recamara">4</span> Recamaras | <span id="banos">2</span> Baños</p></a></div>
+		          </div>
+		          
+		          <!--  Example item end -->
+		        </div>
+		        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+		        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+	    <!-- Page Content -->
+	    <div class="container contenido">
+	        <div class="row">
+	            <div class="col-sm-12">
+	                <h1 class="h1-casas-venta">Casas en Venta</h1>
+
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/casa.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Venta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/renta.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Renta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/alberca.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Venta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/casa.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Renta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/renta.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Venta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/alberca.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Renta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 	                
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/casa.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Venta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/renta.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Renta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/alberca.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Venta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/casa.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Renta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/renta.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Venta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-sm-4">
+	                    <div class="thumbnail">
+	                        <img src="assets/images/alberca.png" alt="...">
+	                        <div class="caption">
+	                            <h3>Casa en venta o renta</h3>
+	                            <div class="p-t">
+		                            <strong id="precio" class="precio">$ 1,300,000</strong>
+		                            <span class="tipo-voc">Renta</span>
+	                            </div>
+	                            <span class="caracteristicas">
+	                            	<span id="metros">
+	                            	<i class="fa fa-codepen" aria-hidden="true"></i>
+	                            		20m²
+	                            	</span>                            	
+	                            	<span id="habitaciones">
+	                            	<i class="fa fa-bed" aria-hidden="true"></i>
+	                            		10 Habitaciones
+	                            	</span>
+	                            	<span id="baños">
+	                            	<i class="fa fa-bath" aria-hidden="true"></i>
+	                            		 12 Baño(s)
+	                            	</span>
+	                            </span>
+	                        </div>
+	                    </div>
+	                </div>                
+
+	            </div>
+	        </div>        
+
+	    </div>
+	    <!-- /.container -->
+
+    </section>
+
+    <section class="paginacion">
+    	<div class="container">		
+			<nav aria-label="Page navigation">
+			  <ul class="pagination">
+			    <li>
+			      <a href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li>
+			      <a href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+    	</div>	
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+    	<div class="container">		
+	        <div class="row">
+
+	        	<div class="col-lg-12">
+	                <div class="col-md-4 col-sm-6">
+	                	<img class="logo-cinneg-pie" src="assets/images/logo/logo-negro.png">
+		                <p>
+		                	Cinneg Consulting Group es un grupo multidisciplinario de profesionistas, altamente capacitados en el área de capital humano, tesorería, consultoría contable fiscal, consultoría legal y auditoría.
+		                </p>
+	                </div>
+	                <div class="col-md-4 col-sm-6 text-center">
+	                	<ul>
+	                		<li><strong>Síguenos en nuestras redes sociales.</strong></li>
+	                		<li><a href="#">Facebook</a></li>
+	                		<li><a href="#">Facebook</a></li>
+	                		<li><a href="#">Facebook</a></li>
+	                	</ul>
+	                </div>
+	                <div class="col-md-4 col-sm-6 ">
+	                	<ul>
+	                		<li><strong>Contáctanos</strong></li>
+	                		<li><p>Email: inmobiliaria@cinneg.com</p></li>
+	                		<li><p>Tel.: 99-22-22-22-22</p></li>
+	                	</ul>
+	                </div>
+	        	</div>
+	            <div class="col-lg-12 text-center creditos">
+	                <p>Copyright &copy; Cinneg 2017. Todos los derechos reservados. Diseñado & Desarrollado por <a href="#">Kimvex</a></p>
+	            </div>
+	        </div>
+	        <!-- /.row -->
+    	</div>
+    </footer>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- carrusel -->
+    <script src="assets/js/carrusel-item.js"></script>
+
+    <script src="assets/js/scroll.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

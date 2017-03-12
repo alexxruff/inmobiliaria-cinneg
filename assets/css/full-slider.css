@@ -1,0 +1,40 @@
+
+html,
+body {
+    height: 100%;
+}
+.navbar{
+    /*background: linear-gradient(rgba(20,42,47,01),rgba(0,0,0,0.99));*/
+    background: transparent;
+}
+.navbar-inverse{
+    border-color none
+}
+
+.carousel,
+.item,
+.active {
+    /*height: 400px;*/
+}
+
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.fill img{
+    width: 100%;
+    height: 100%; 
+}
+
